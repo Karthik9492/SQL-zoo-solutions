@@ -1,0 +1,18 @@
+# Introducing the world table of countries
+# The "World" table in the SQL Zoo platform offers a comprehensive dataset representing various countries across the globe. It includes attributes such as country names, 
+# continent(region),population, area, GDP, and more. This table serves as an excellent foundation for learning and practicing SQL queries, 
+# enabling users to manipulate and analyze real-world data.
+
+# 1.show the population of Germany
+SELECT population FROM world
+  WHERE name = 'Germany';
+
+#2. Show the name and the population for 'Sweden', 'Norway' and 'Denmark'.
+SELECT name, population FROM world
+  WHERE name IN ('Sweden', 'Norway', 'Denmark');
+
+#3.show the country and the area for countries with an area between 200,000 and 250,000.
+SELECT name, area FROM world
+  WHERE area BETWEEN 200000 AND 250000;
+
+
